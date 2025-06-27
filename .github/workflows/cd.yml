@@ -17,7 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "."
-          target: "/home/ubuntu/app"
+          target: "/home/ubuntu/tutorme"
     
 
       - name: Executar SSH no servidor
