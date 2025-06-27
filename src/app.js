@@ -21,10 +21,10 @@ app.get('/', (req, res) => {
 });
 
 // ✅ IMPORTAÇÃO E USO DAS ROTAS
-const tutorRoutes = require('../routes/tutores');
+const tutorRoutes = require('./routes/tutores');
 app.use('/api/tutores', tutorRoutes);
 
-const alunosRoute = require('../routes/alunos');
+const alunosRoute = require('./routes/alunos');
 app.use('/api/alunos', alunosRoute);
 
 // Exporta o app para ser usado no server.js
