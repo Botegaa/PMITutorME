@@ -18,9 +18,17 @@ export default defineConfig([
     },
   },
   {
-    files: ["**/*.js"],
+    files: ["**/*.{test,spec}.{js,mjs,cjs}", "**/__tests__/**/*.{js,mjs,cjs}"],
+    env: {
+      jest: true,
+    },
     languageOptions: {
       sourceType: "commonjs",
+      globals: {
+        ...globals.node,
+        ...globals.browser,
+        ...globals.jest,
+      },
     },
   },
 ]);
