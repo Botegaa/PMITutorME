@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('../src/app'); // correto agora
+const app = require('../src/app'); 
 
 describe('GET /api/tutores', () => {
   it('deve retornar status 200', async () => {
