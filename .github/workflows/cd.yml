@@ -18,6 +18,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           source: "."
           target: "/home/ubuntu/app"
+    
 
       - name: Executar SSH no servidor
         uses: appleboy/ssh-action@v1.0.3
@@ -27,5 +28,5 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /home/ubuntu/app
-            npm install
-            pm2 restart all || pm2 start server.js --name "node-app"
+            npm install --production
+            pm2 restart node-app || pm2 start server.js --name "node-app"
