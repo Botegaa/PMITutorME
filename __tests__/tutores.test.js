@@ -1,9 +1,9 @@
 const request = require('supertest');
-const app = require('../src/app');
+const app = require('../src/app'); // correto agora
 
-describe('GET /tutores', () => {
+describe('GET /api/tutores', () => {
   it('deve retornar status 200', async () => {
-    const res = await request(app).get('/tutores');
+    const res = await request(app).get('/api/tutores');
     expect(res.statusCode).toBe(200);
   });
 });
