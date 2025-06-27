@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Aluno = require('../models/aluno');
 
-
+/* eslint-disable no-unused-vars */
 
 router.post('/login', async (req, res) => {
   const { email, senha } = req.body;
@@ -14,7 +14,8 @@ router.post('/login', async (req, res) => {
     if (aluno.senha !== senha) return res.status(401).json({ erro: 'Senha incorreta' });
 
     res.json({ mensagem: 'Login bem-sucedido', aluno });
-  } catch (err) {
+  } catch (_erro)  
+  {
     res.status(500).json({ erro: 'Erro interno no servidor' });
   }
 });
@@ -62,7 +63,8 @@ router.get('/', async (req, res) => {
   try {
     const alunos = await Aluno.find();
     res.json(alunos);
-  } catch (err) {
+  } catch (_erro)  
+   {
     res.status(500).json({ erro: 'Erro ao buscar alunos' });
   }
 });
@@ -74,7 +76,8 @@ router.get('/:id', async (req, res) => {
       return res.status(404).json({ erro: "Aluno não encontrado" });
     }
     res.json(aluno);
-  } catch (err) {
+  } catch (_erro) 
+  {
     res.status(500).json({ erro: 'Erro ao buscar aluno' });
   }
 });

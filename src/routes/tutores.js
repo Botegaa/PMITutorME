@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Tutor = require('../models/tutor');
-
+/* eslint-disable no-unused-vars */
 
 router.post('/', async (req, res) => {
   try {
@@ -64,7 +64,8 @@ router.post('/login', async (req, res) => {
     }
 
     res.json({ mensagem: 'Login bem-sucedido', tutor });
-  } catch (err) {
+  } catch (_erro) 
+  {
     res.status(500).json({ erro: 'Erro interno no servidor' });
   }
 });
