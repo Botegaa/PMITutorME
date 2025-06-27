@@ -5,7 +5,9 @@
   "scripts": {
     "test": "jest --coverage",
     "start": "node server.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "coverage": "jest --coverage"
+    
   },
   "keywords": [],
   "author": "",
