@@ -13,13 +13,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
-    env:
-      MONGODB_URI: ${{ secrets.MONGODB_URI }}
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -29,18 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run ESLint
-        run: |
-          if [ -f package.json ] && grep -q '"lint":' package.json; then
-            npm run lint
-          else
-            echo "No lint script found, skipping lint."
-          fi
+      - name: Set environment variables
+        run: echo "MONGODB_URI=${{ secrets.MONGODB_URI }}" >> $GITHUB_ENV
 
-      - name: Run tests with coverage
-        run: |
-          if [ -f package.json ] && grep -q '"test":' package.json; then
-            npm test -- --coverage
-          else
-            echo "No test script found."
-          fi
+      - name: Run tests
+        run: npm test
+
+      - name: Run lint
+        run: npm run lint
+
+      - name: Run coverage
+        run: npm run coverage
