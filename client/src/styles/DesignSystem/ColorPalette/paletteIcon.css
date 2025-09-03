@@ -1,0 +1,9 @@
+.ic > span {
+  display: flex;
+  gap: 0.5rem;
+
+  .ex-icon {
+    width: 20px;
+    height: 20px;
+  }
+}

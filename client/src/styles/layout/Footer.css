@@ -1,0 +1,35 @@
+@import url("@/styles/variables/colors.css");
+@import url("@/styles/variables/font-styles.css");
+
+footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8rem 5rem 5rem 5rem;
+  width: 100%;
+
+  color: var(--ttm-txt-default);
+  background-color: var(--ttm-bg-default);
+  /* CHANGE TO BORDER COLOR */
+  border-top: solid 1px var(--ttm-bor-default);
+
+  gap: 1rem;
+
+  nav ul {
+    display: flex;
+
+    gap: 1.5rem;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+
+      color: var(--ttm-txt-default);
+
+      &:hover {
+        color: var(--ttm-txt-default-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: 600;
+  }
+
+  .input-wrapper {
+    background-color: var(--ttm-bg-default);
+    border: solid 1px var(--ttm-bor-default);
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    min-height: 2.5rem;
+
+    input {
+      background-color: transparent;
+      border: none;
+      width: 100%;
+      font-size: 1rem;
+      font-family: "Montserrat", sans-serif;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        color: var(--ttm-txt-default-3rd);
+      }
+    }
+
+    &:has(input:focus) {
+      border-color: var(--ttm-bor-main-3rd);
+    }
+
+    &:has(input:disabled) {
+      background-color: var(--ttm-bg-disabled);
+      border-color: var(--ttm-bor-disabled);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.signup-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  background-color: var(--ttm-bg-default);
+  align-items: center;
+  justify-content: center;
+}

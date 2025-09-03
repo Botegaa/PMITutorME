@@ -1,0 +1,25 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 2rem;
+
+  .vars {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    padding: 0 5rem 8rem 5rem;
+    width: 100%;
+
+    gap: 1rem;
+
+    > section {
+      display: flex;
+      flex-direction: column;
+
+      gap: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 2rem;
+
+  .form-group > div.input-wrapper {
+    background-color: transparent;
+    border-color: var(--ttm-bor-default-3rd);
+  }
+
+  .entrar-btn {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,46 @@
+@import url("@/styles/variables/colors.css");
+@import url("@/styles/variables/font-styles.css");
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+
+    li a {
+      text-decoration: none;
+      color: var(--ttm-txt-default);
+
+      &:hover {
+        color: var(--ttm-txt-default-hover);
+      }
+    }
+  }
+
+  button {
+    position: fixed;
+    top: 2rem;
+    right: 5rem;
+    background-color: var(--ttm-bg-neutral);
+    border: solid 1px var(--ttm-bor-neutral);
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--ttm-ic-on-neutral);
+    font-size: 1.5rem;
+
+    &:hover {
+      background-color: var(--ttm-bg-neutral-hover);
+    }
+  }
+}

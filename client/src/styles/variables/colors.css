@@ -1,0 +1,432 @@
+@import url("@/styles/variables/color-primitives.css");
+
+/* LIGHT PALETTE */
+:root {
+  /* BACKGROUND */
+  /* Default */
+  --ttm-bg-default: var(--ttm-color-white-100);
+  --ttm-bg-default-hover: var(--ttm-color-slate-10);
+  --ttm-bg-default-2nd: var(--ttm-color-slate-10);
+  --ttm-bg-default-2nd-hover: var(--ttm-color-slate-20);
+  --ttm-bg-default-3rd: var(--ttm-color-slate-30);
+  --ttm-bg-default-3rd-hover: var(--ttm-color-slate-40);
+
+  /* Neutral */
+  --ttm-bg-neutral: var(--ttm-color-slate-70);
+  --ttm-bg-neutral-hover: var(--ttm-color-slate-80);
+  --ttm-bg-neutral-2nd: var(--ttm-color-slate-30);
+  --ttm-bg-neutral-2nd-hover: var(--ttm-color-slate-40);
+  --ttm-bg-neutral-3rd: var(--ttm-color-slate-20);
+  --ttm-bg-neutral-3rd-hover: var(--ttm-color-slate-30);
+
+  /* Main */
+  --ttm-bg-main: var(--ttm-color-blue-50);
+  --ttm-bg-main-hover: var(--ttm-color-blue-40);
+  --ttm-bg-main-2nd: var(--ttm-color-blue-20);
+  --ttm-bg-main-2nd-hover: var(--ttm-color-blue-30);
+  --ttm-bg-main-3rd: var(--ttm-color-blue-10);
+  --ttm-bg-main-3rd-hover: var(--ttm-color-blue-20);
+
+  --ttm-bg-accent: var(--ttm-color-yellow-50);
+  --ttm-bg-accent-hover: var(--ttm-color-yellow-60);
+  --ttm-bg-accent-2nd: var(--ttm-color-yellow-20);
+  --ttm-bg-accent-2nd-hover: var(--ttm-color-yellow-30);
+  --ttm-bg-accent-3rd: var(--ttm-color-yellow-10);
+  --ttm-bg-accent-3rd-hover: var(--ttm-color-yellow-20);
+
+  --ttm-bg-danger: var(--ttm-color-red-50);
+  --ttm-bg-danger-hover: var(--ttm-color-red-60);
+  --ttm-bg-danger-2nd: var(--ttm-color-red-20);
+  --ttm-bg-danger-2nd-hover: var(--ttm-color-red-30);
+  --ttm-bg-danger-3rd: var(--ttm-color-red-10);
+  --ttm-bg-danger-3rd-hover: var(--ttm-color-red-20);
+
+  --ttm-bg-success: var(--ttm-color-green-50);
+  --ttm-bg-success-hover: var(--ttm-color-green-60);
+  --ttm-bg-success-2nd: var(--ttm-color-green-20);
+  --ttm-bg-success-2nd-hover: var(--ttm-color-green-30);
+  --ttm-bg-success-3rd: var(--ttm-color-green-10);
+  --ttm-bg-success-3rd-hover: var(--ttm-color-green-20);
+
+  --ttm-bg-warn: var(--ttm-color-yellow-40);
+  --ttm-bg-warn-hover: var(--ttm-color-yellow-50);
+  --ttm-bg-warn-2nd: var(--ttm-color-yellow-20);
+  --ttm-bg-warn-2nd-hover: var(--ttm-color-yellow-30);
+  --ttm-bg-warn-3rd: var(--ttm-color-yellow-10);
+  --ttm-bg-warn-3rd-hover: var(--ttm-color-yellow-20);
+
+  --ttm-bg-disabled: var(--ttm-color-slate-30);
+
+  /* BORDER */
+  /* Default */
+  --ttm-bor-default: var(--ttm-color-slate-30);
+  --ttm-bor-default-2nd: var(--ttm-color-slate-50);
+  --ttm-bor-default-3rd: var(--ttm-color-slate-70);
+
+  /* Neutral */
+  --ttm-bor-neutral: var(--ttm-color-slate-90);
+  --ttm-bor-neutral-2nd: var(--ttm-color-slate-50);
+  --ttm-bor-neutral-3rd: var(--ttm-color-slate-40);
+
+  /* Main */
+  --ttm-bor-main: var(--ttm-color-blue-50);
+  --ttm-bor-main-2nd: var(--ttm-color-blue-30);
+  --ttm-bor-main-3rd: var(--ttm-color-blue-20);
+
+  /* Accent */
+  --ttm-bor-accent: var(--ttm-color-yellow-50);
+  --ttm-bor-accent-2nd: var(--ttm-color-yellow-40);
+  --ttm-bor-accent-3rd: var(--ttm-color-yellow-30);
+
+  /* Danger */
+  --ttm-bor-danger: var(--ttm-color-red-50);
+  --ttm-bor-danger-2nd: var(--ttm-color-red-30);
+  --ttm-bor-danger-3rd: var(--ttm-color-red-20);
+
+  /* Success */
+  --ttm-bor-success: var(--ttm-color-green-50);
+  --ttm-bor-success-2nd: var(--ttm-color-green-40);
+  --ttm-bor-success-3rd: var(--ttm-color-green-30);
+
+  /* Warning */
+  --ttm-bor-warn: var(--ttm-color-yellow-70);
+  --ttm-bor-warn-2nd: var(--ttm-color-yellow-60);
+  --ttm-bor-warn-3rd: var(--ttm-color-yellow-50);
+
+  /* Disabled */
+  --ttm-bor-disabled: var(--ttm-color-slate-40);
+
+  /* ICON */
+  /* Default */
+  --ttm-ic-default: var(--ttm-color-slate-90);
+  --ttm-ic-default-2nd: var(--ttm-color-slate-50);
+  --ttm-ic-default-3rd: var(--ttm-color-slate-40);
+
+  /* Neutral */
+  --ttm-ic-neutral: var(--ttm-color-slate-90);
+  --ttm-ic-neutral-2nd: var(--ttm-color-slate-70);
+  --ttm-ic-neutral-3rd: var(--ttm-color-slate-60);
+  --ttm-ic-on-neutral: var(--ttm-color-slate-10);
+  --ttm-ic-on-neutral-2nd: var(--ttm-color-slate-90);
+  --ttm-ic-on-neutral-3rd: var(--ttm-color-slate-80);
+
+  /* Main */
+  --ttm-ic-main: var(--ttm-color-blue-70);
+  --ttm-ic-main-2nd: var(--ttm-color-blue-50);
+  --ttm-ic-main-3rd: var(--ttm-color-blue-40);
+  --ttm-ic-on-main: var(--ttm-color-blue-10);
+  --ttm-ic-on-main-2nd: var(--ttm-color-blue-90);
+  --ttm-ic-on-main-3rd: var(--ttm-color-blue-80);
+
+  /* Accent */
+  --ttm-ic-accent: var(--ttm-color-yellow-80);
+  --ttm-ic-accent-2nd: var(--ttm-color-yellow-60);
+  --ttm-ic-accent-3rd: var(--ttm-color-yellow-50);
+  --ttm-ic-on-accent: var(--ttm-color-yellow-10);
+  --ttm-ic-on-accent-2nd: var(--ttm-color-yellow-90);
+  --ttm-ic-on-accent-3rd: var(--ttm-color-yellow-80);
+
+  /* Danger */
+  --ttm-ic-danger: var(--ttm-color-red-70);
+  --ttm-ic-danger-2nd: var(--ttm-color-red-60);
+  --ttm-ic-danger-3rd: var(--ttm-color-red-50);
+  --ttm-ic-on-danger: var(--ttm-color-red-10);
+  --ttm-ic-on-danger-2nd: var(--ttm-color-red-70);
+  --ttm-ic-on-danger-3rd: var(--ttm-color-red-70);
+
+  /* Success */
+  --ttm-ic-success: var(--ttm-color-green-80);
+  --ttm-ic-success-2nd: var(--ttm-color-green-60);
+  --ttm-ic-success-3rd: var(--ttm-color-green-50);
+  --ttm-ic-on-success: var(--ttm-color-green-10);
+  --ttm-ic-on-success-2nd: var(--ttm-color-green-80);
+  --ttm-ic-on-success-3rd: var(--ttm-color-green-90);
+
+  /* Warning */
+  --ttm-ic-warn: var(--ttm-color-yellow-70);
+  --ttm-ic-warn-2nd: var(--ttm-color-yellow-60);
+  --ttm-ic-warn-3rd: var(--ttm-color-yellow-50);
+  --ttm-ic-on-warn: var(--ttm-color-yellow-90);
+  --ttm-ic-on-warn-2nd: var(--ttm-color-yellow-70);
+  --ttm-ic-on-warn-3rd: var(--ttm-color-yellow-80);
+
+  /* Disabled */
+  --ttm-ic-disabled: var(--ttm-color-slate-40);
+  --ttm-ic-on-disabled: var(--ttm-color-slate-40);
+
+  /* TEXT */
+  /* Default */
+  --ttm-txt-default: var(--ttm-color-slate-90);
+  --ttm-txt-default-2nd: var(--ttm-color-slate-50);
+  --ttm-txt-default-3rd: var(--ttm-color-slate-40);
+
+  /* Neutral */
+  --ttm-txt-neutral: var(--ttm-color-slate-90);
+  --ttm-txt-neutral-2nd: var(--ttm-color-slate-70);
+  --ttm-txt-neutral-3rd: var(--ttm-color-slate-60);
+  --ttm-txt-on-neutral: var(--ttm-color-slate-10);
+  --ttm-txt-on-neutral-2nd: var(--ttm-color-slate-90);
+  --ttm-txt-on-neutral-3rd: var(--ttm-color-slate-80);
+
+  /* Main */
+  --ttm-txt-main: var(--ttm-color-blue-50);
+  --ttm-txt-main-2nd: var(--ttm-color-blue-40);
+  --ttm-txt-main-3rd: var(--ttm-color-blue-30);
+  --ttm-txt-on-main: var(--ttm-color-blue-10);
+  --ttm-txt-on-main-2nd: var(--ttm-color-blue-80);
+  --ttm-txt-on-main-3rd: var(--ttm-color-blue-70);
+
+  /* Accent */
+  --ttm-txt-accent: var(--ttm-color-yellow-60);
+  --ttm-txt-accent-2nd: var(--ttm-color-yellow-50);
+  --ttm-txt-accent-3rd: var(--ttm-color-yellow-40);
+  --ttm-txt-on-accent: var(--ttm-color-yellow-10);
+  --ttm-txt-on-accent-2nd: var(--ttm-color-yellow-90);
+  --ttm-txt-on-accent-3rd: var(--ttm-color-yellow-80);
+
+  /* Danger */
+  --ttm-txt-danger: var(--ttm-color-red-70);
+  --ttm-txt-danger-2nd: var(--ttm-color-red-60);
+  --ttm-txt-danger-3rd: var(--ttm-color-red-50);
+  --ttm-txt-on-danger: var(--ttm-color-red-10);
+  --ttm-txt-on-danger-2nd: var(--ttm-color-red-70);
+  --ttm-txt-on-danger-3rd: var(--ttm-color-red-70);
+
+  /* Success */
+  --ttm-txt-success: var(--ttm-color-green-80);
+  --ttm-txt-success-2nd: var(--ttm-color-green-60);
+  --ttm-txt-success-3rd: var(--ttm-color-green-50);
+  --ttm-txt-on-success: var(--ttm-color-green-10);
+  --ttm-txt-on-success-2nd: var(--ttm-color-green-80);
+  --ttm-txt-on-success-3rd: var(--ttm-color-green-80);
+
+  /* Warning */
+  --ttm-txt-warn: var(--ttm-color-yellow-70);
+  --ttm-txt-warn-2nd: var(--ttm-color-yellow-60);
+  --ttm-txt-warn-3rd: var(--ttm-color-yellow-50);
+  --ttm-txt-on-warn: var(--ttm-color-yellow-900);
+  --ttm-txt-on-warn-2nd: var(--ttm-color-yellow-70);
+  --ttm-txt-on-warn-3rd: var(--ttm-color-yellow-80);
+
+  /* Disabled */
+  --ttm-txt-disabled: var(--ttm-color-slate-40);
+  --ttm-txt-on-disabled: var(--ttm-color-slate-40);
+}
+
+/* DARK PALETTE */
+:root.dark-theme {
+  /* BACKGROUND */
+  /* Default */
+  --ttm-bg-default: var(--ttm-color-slate-90);
+  --ttm-bg-default-hover: var(--ttm-color-slate-80);
+  --ttm-bg-default-2nd: var(--ttm-color-slate-80);
+  --ttm-bg-default-2nd-hover: var(--ttm-color-slate-70);
+  --ttm-bg-default-3rd: var(--ttm-color-slate-60);
+  --ttm-bg-default-3rd-hover: var(--ttm-color-slate-70);
+
+  /* Neutral */
+  --ttm-bg-neutral: var(--ttm-color-slate-40);
+  --ttm-bg-neutral-hover: var(--ttm-color-slate-50);
+  --ttm-bg-neutral-2nd: var(--ttm-color-slate-70);
+  --ttm-bg-neutral-2nd-hover: var(--ttm-color-slate-80);
+  --ttm-bg-neutral-3rd: var(--ttm-color-slate-90);
+  --ttm-bg-neutral-3rd-hover: var(--ttm-color-slate-100);
+
+  /* Main */
+  --ttm-bg-main: var(--ttm-color-blue-20);
+  --ttm-bg-main-hover: var(--ttm-color-blue-10);
+  --ttm-bg-main-2nd: var(--ttm-color-blue-40);
+  --ttm-bg-main-2nd-hover: var(--ttm-color-blue-50);
+  --ttm-bg-main-3rd: var(--ttm-color-blue-60);
+  --ttm-bg-main-3rd-hover: var(--ttm-color-blue-70);
+
+  /* Accent */
+  --ttm-bg-accent: var(--ttm-color-yellow-20);
+  --ttm-bg-accent-hover: var(--ttm-color-yellow-10);
+  --ttm-bg-accent-2nd: var(--ttm-color-yellow-40);
+  --ttm-bg-accent-2nd-hover: var(--ttm-color-yellow-50);
+  --ttm-bg-accent-3rd: var(--ttm-color-yellow-70);
+  --ttm-bg-accent-3rd-hover: var(--ttm-color-yellow-60);
+
+  /* Danger */
+  --ttm-bg-danger: var(--ttm-color-red-50);
+  --ttm-bg-danger-hover: var(--ttm-color-red-40);
+  --ttm-bg-danger-2nd: var(--ttm-color-red-60);
+  --ttm-bg-danger-2nd-hover: var(--ttm-color-red-50);
+  --ttm-bg-danger-3rd: var(--ttm-color-red-70);
+  --ttm-bg-danger-3rd-hover: var(--ttm-color-red-80);
+
+  /* Success */
+  --ttm-bg-success: var(--ttm-color-green-60);
+  --ttm-bg-success-hover: var(--ttm-color-green-70);
+  --ttm-bg-success-2nd: var(--ttm-color-green-70);
+  --ttm-bg-success-2nd-hover: var(--ttm-color-green-80);
+  --ttm-bg-success-3rd: var(--ttm-color-green-90);
+  --ttm-bg-success-3rd-hover: var(--ttm-color-green-80);
+
+  /* Warning */
+  --ttm-bg-warn: var(--ttm-color-yellow-50);
+  --ttm-bg-warn-hover: var(--ttm-color-yellow-60);
+  --ttm-bg-warn-2nd: var(--ttm-color-yellow-70);
+  --ttm-bg-warn-2nd-hover: var(--ttm-color-yellow-80);
+  --ttm-bg-warn-3rd: var(--ttm-color-yellow-80);
+  --ttm-bg-warn-3rd-hover: var(--ttm-color-yellow-90);
+
+  /* Disabled */
+  --ttm-bg-disabled: var(--ttm-color-slate-70);
+
+  /* BORDER */
+  /* Default */
+  --ttm-bor-default: var(--ttm-color-slate-60);
+  --ttm-bor-default-2nd: var(--ttm-color-slate-50);
+  --ttm-bor-default-3rd: var(--ttm-color-slate-40);
+
+  /* Neutral */
+  --ttm-bor-neutral: var(--ttm-color-slate-40);
+  --ttm-bor-neutral-2nd: var(--ttm-color-slate-50);
+  --ttm-bor-neutral-3rd: var(--ttm-color-slate-60);
+
+  /* Main */
+  --ttm-bor-main: var(--ttm-color-blue-20);
+  --ttm-bor-main-2nd: var(--ttm-color-blue-30);
+  --ttm-bor-main-3rd: var(--ttm-color-blue-40);
+
+  /* Accent */
+  --ttm-bor-accent: var(--ttm-color-yellow-20);
+  --ttm-bor-accent-2nd: var(--ttm-color-yellow-30);
+  --ttm-bor-accent-3rd: var(--ttm-color-yellow-40);
+
+  /* Danger */
+  --ttm-bor-danger: var(--ttm-color-red-50);
+  --ttm-bor-danger-2nd: var(--ttm-color-red-40);
+  --ttm-bor-danger-3rd: var(--ttm-color-red-30);
+
+  /* Success */
+  --ttm-bor-success: var(--ttm-color-green-40);
+  --ttm-bor-success-2nd: var(--ttm-color-green-30);
+  --ttm-bor-success-3rd: var(--ttm-color-green-20);
+
+  /* Warning */
+  --ttm-bor-warn: var(--ttm-color-yellow-40);
+  --ttm-bor-warn-2nd: var(--ttm-color-yellow-30);
+  --ttm-bor-warn-3rd: var(--ttm-color-yellow-20);
+
+  /* Disabled */
+  --ttm-bor-disabled: var(--ttm-color-slate-60);
+
+  /* ICON */
+  /* Default */
+  --ttm-ic-default: var(--ttm-color-white-100);
+  --ttm-ic-default-2nd: var(--ttm-color-white-50);
+  --ttm-ic-default-3rd: var(--ttm-color-white-40);
+
+  /* Neutral */
+  --ttm-ic-neutral: var(--ttm-color-slate-20);
+  --ttm-ic-neutral-2nd: var(--ttm-color-slate-30);
+  --ttm-ic-neutral-3rd: var(--ttm-color-slate-40);
+  --ttm-ic-on-neutral: var(--ttm-color-slate-100);
+  --ttm-ic-on-neutral-2nd: var(--ttm-color-slate-10);
+  --ttm-ic-on-neutral-3rd: var(--ttm-color-slate-10);
+
+  /* Main */
+  --ttm-ic-main: var(--ttm-color-blue-10);
+  --ttm-ic-main-2nd: var(--ttm-color-blue-30);
+  --ttm-ic-main-3rd: var(--ttm-color-blue-50);
+  --ttm-ic-on-main: var(--ttm-color-blue-90);
+  --ttm-ic-on-main-2nd: var(--ttm-color-blue-10);
+  --ttm-ic-on-main-3rd: var(--ttm-color-blue-10);
+
+  /* Accent */
+  --ttm-ic-accent: var(--ttm-color-yellow-10);
+  --ttm-ic-accent-2nd: var(--ttm-color-yellow-30);
+  --ttm-ic-accent-3rd: var(--ttm-color-yellow-60);
+  --ttm-ic-on-accent: var(--ttm-color-yellow-100);
+  --ttm-ic-on-accent-2nd: var(--ttm-color-yellow-90);
+  --ttm-ic-on-accent-3rd: var(--ttm-color-yellow-10);
+
+  /* Danger */
+  --ttm-ic-danger: var(--ttm-color-red-20);
+  --ttm-ic-danger-2nd: var(--ttm-color-red-40);
+  --ttm-ic-danger-3rd: var(--ttm-color-red-50);
+  --ttm-ic-on-danger: var(--ttm-color-red-10);
+  --ttm-ic-on-danger-2nd: var(--ttm-color-red-10);
+  --ttm-ic-on-danger-3rd: var(--ttm-color-red-10);
+
+  /* Success */
+  --ttm-ic-success: var(--ttm-color-green-20);
+  --ttm-ic-success-2nd: var(--ttm-color-green-40);
+  --ttm-ic-success-3rd: var(--ttm-color-green-60);
+  --ttm-ic-on-success: var(--ttm-color-green-100);
+  --ttm-ic-on-success-2nd: var(--ttm-color-green-10);
+  --ttm-ic-on-success-3rd: var(--ttm-color-green-10);
+
+  /* Warning */
+  --ttm-ic-warn: var(--ttm-color-yellow-20);
+  --ttm-ic-warn-2nd: var(--ttm-color-yellow-40);
+  --ttm-ic-warn-3rd: var(--ttm-color-yellow-60);
+  --ttm-ic-on-warn: var(--ttm-color-yellow-100);
+  --ttm-ic-on-warn-2nd: var(--ttm-color-yellow-10);
+  --ttm-ic-on-warn-3rd: var(--ttm-color-yellow-10);
+
+  /* Disabled */
+  --ttm-ic-disabled: var(--ttm-color-slate-50);
+  --ttm-ic-on-disabled: var(--ttm-color-slate-40);
+
+  /* TEXT */
+  /* Default */
+  --ttm-txt-default: var(--ttm-color-white-100);
+  --ttm-txt-default-2nd: var(--ttm-color-white-50);
+  --ttm-txt-default-3rd: var(--ttm-color-white-40);
+
+  /* Neutral */
+  --ttm-txt-neutral: var(--ttm-color-slate-20);
+  --ttm-txt-neutral-2nd: var(--ttm-color-slate-30);
+  --ttm-txt-neutral-3rd: var(--ttm-color-slate-40);
+  --ttm-txt-on-neutral: var(--ttm-color-slate-100);
+  --ttm-txt-on-neutral-2nd: var(--ttm-color-slate-10);
+  --ttm-txt-on-neutral-3rd: var(--ttm-color-slate-10);
+
+  /* Main */
+  --ttm-txt-main: var(--ttm-color-blue-10);
+  --ttm-txt-main-2nd: var(--ttm-color-blue-30);
+  --ttm-txt-main-3rd: var(--ttm-color-blue-40);
+  --ttm-txt-on-main: var(--ttm-color-blue-90);
+  --ttm-txt-on-main-2nd: var(--ttm-color-blue-10);
+  --ttm-txt-on-main-3rd: var(--ttm-color-blue-10);
+
+  /* Accent */
+  --ttm-txt-accent: var(--ttm-color-yellow-10);
+  --ttm-txt-accent-2nd: var(--ttm-color-yellow-30);
+  --ttm-txt-accent-3rd: var(--ttm-color-yellow-40);
+  --ttm-txt-on-accent: var(--ttm-color-yellow-100);
+  --ttm-txt-on-accent-2nd: var(--ttm-color-yellow-90);
+  --ttm-txt-on-accent-3rd: var(--ttm-color-yellow-10);
+
+  /* Danger */
+  --ttm-txt-danger: var(--ttm-color-red-20);
+  --ttm-txt-danger-2nd: var(--ttm-color-red-40);
+  --ttm-txt-danger-3rd: var(--ttm-color-red-50);
+  --ttm-txt-on-danger: var(--ttm-color-red-10);
+  --ttm-txt-on-danger-2nd: var(--ttm-color-red-10);
+  --ttm-txt-on-danger-3rd: var(--ttm-color-red-10);
+
+  /* Success */
+  --ttm-txt-success: var(--ttm-color-green-20);
+  --ttm-txt-success-2nd: var(--ttm-color-green-40);
+  --ttm-txt-success-3rd: var(--ttm-color-green-60);
+  --ttm-txt-on-success: var(--ttm-color-green-100);
+  --ttm-txt-on-success-2nd: var(--ttm-color-green-10);
+  --ttm-txt-on-success-3rd: var(--ttm-color-green-10);
+
+  /* Warning */
+  --ttm-txt-warn: var(--ttm-color-yellow-20);
+  --ttm-txt-warn-2nd: var(--ttm-color-yellow-40);
+  --ttm-txt-warn-3rd: var(--ttm-color-yellow-60);
+  --ttm-txt-on-warn: var(--ttm-color-yellow-100);
+  --ttm-txt-on-warn-2nd: var(--ttm-color-yellow-10);
+  --ttm-txt-on-warn-3rd: var(--ttm-color-yellow-10);
+
+  /* Disabled */
+  --ttm-txt-disabled: var(--ttm-color-slate-50);
+  --ttm-txt-on-disabled: var(--ttm-color-slate-40);
+}

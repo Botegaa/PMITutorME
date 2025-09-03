@@ -1,0 +1,52 @@
+.login {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 5rem;
+
+  .layout {
+    padding: 6rem 5rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      gap: 1rem;
+
+      h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+
+        a {
+          font-weight: 600;
+          color: var(--ttm-txt-main-3rd);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    width: 50%;
+  }
+}

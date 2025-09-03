@@ -1,0 +1,19 @@
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  gap: 2rem;
+
+  .form-group > div.input-wrapper {
+    background-color: transparent;
+    border-color: var(--ttm-bor-default-3rd);
+  }
+
+  .form-group > div.input-wrapper:has(input:focus) {
+    border-color: var(--ttm-bor-main-3rd);
+  }
+
+  .registrar-btn {
+    text-transform: uppercase;
+  }
+}

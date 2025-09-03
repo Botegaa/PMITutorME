@@ -1,0 +1,29 @@
+.stgs-acc-sec {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem;
+  width: 100%;
+  gap: 1.5rem;
+
+  .stgs-row.justify {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .stgs-col {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0.5rem;
+
+      .stgs-config {
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      .stgs-detail {
+        color: var(--ttm-txt-default-2nd);
+      }
+    }
+  }
+}

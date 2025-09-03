@@ -1,0 +1,45 @@
+.btn {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+
+  border-radius: 0.5rem;
+
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: var(--ttm-txt-on-main);
+  background-color: var(--ttm-bg-main);
+  border: solid 1px var(--ttm-bor-main-3rd);
+
+  &:hover {
+    background-color: var(--ttm-bg-main-hover);
+  }
+}
+
+.btn-neutral {
+  color: var(--ttm-txt-on-neutral);
+  background-color: var(--ttm-bg-neutral);
+  border: solid 1px var(--ttm-bor-neutral-3rd);
+
+  &:hover {
+    background-color: var(--ttm-bg-neutral-hover);
+  }
+}
+
+.btn-subtle {
+  color: var(--ttm-txt-neutral);
+  background-color: transparent;
+  border: solid 1px transparent;
+
+  &:hover {
+    border: solid 1px var(--ttm-bor-default);
+  }
+}
